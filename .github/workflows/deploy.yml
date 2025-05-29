@@ -31,3 +31,6 @@ jobs:
         run: |
           aws s3 rm --recursive s3://instargram-website
           aws s3 cp ./dist  s3://instargram-website/ --recursive
+
+      - name: Cloudfront 캐시 무료화
+        run : aws cloudfront create-invalidation --distribution-id E3U8BUN3GKK8LS --paths "/*"
