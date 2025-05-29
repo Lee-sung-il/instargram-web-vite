@@ -17,4 +17,7 @@ jobs:
         run: npm run build
 
       - name: 디버깅하기
-        run: ls
+        run: |
+          ls
+          cd dist
+          ls
