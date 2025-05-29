@@ -5,18 +5,3 @@ on:
     branches:
       - main
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: 코드 체크아웃
-        uses: actions/checkout@v3
-
-      - name: Node.js 설치
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-
-      - name: Hello World 출력
-        run: echo "🎉 GitHub Actions가 실행되었습니다!"
