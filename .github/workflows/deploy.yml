@@ -23,5 +23,6 @@ jobs:
       - name: 디버깅하기
         run: |
           ls
+          echo ---------------------------
           cd dist
           ls
